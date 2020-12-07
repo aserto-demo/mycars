@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-build="v0.0.$1"
+curr=`cut -d '.' -f 3 trigger.txt`
+next=`expr $curr + 1`
+
+build="v0.0.$next"
 
 echo "trigger release $build"
 
