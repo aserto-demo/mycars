@@ -1,7 +1,9 @@
 .DS_Store
 
 build/
+
+test.tar.gz
 test/
 
 bundle.tar.gz
-bundle.tar.gz/
+bundle/
