@@ -17,7 +17,7 @@ jobs:
       with:
         source: "src"
         target: "build/bundle.tar.gz"
-        options: ""
+        options: "--revision $GITHUB_SHA"
 
     - name: upload
       uses: ncipollo/release-action@v1

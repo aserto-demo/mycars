@@ -4,5 +4,5 @@ default allow = false
 
 allow {
     input.method == "GET"
-    input.user == "kaia@contoso.com"
+    input.user == "kaia@acmecorp.com"
 }
