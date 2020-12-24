@@ -3,8 +3,8 @@ package mycars.car.get
 default allow = false
 
 allow {
-    i = data.identities[input.user]
-    u = data.users[i]
-    u.attr.enabled == "True"
+    i = dir.identity(input.user)
+    u = dir.user(i)
+    u.enabled == true
     u.attr.department == "Sales Engagement Management"
 }
