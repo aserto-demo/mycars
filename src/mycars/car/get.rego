@@ -1,5 +1,5 @@
 package mycars.car.get
 
 default allowed = false
-default visibile = false
+default visible = false
 default enabled = false
