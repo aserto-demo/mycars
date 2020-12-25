@@ -1,8 +1,9 @@
 package mycars.get
 
-default allow = false
+default allowed = false
+default visibile = false
+default enabled = false
 
-allow {
-    input.method == "GET"
+allowed {
     input.user == "euang@contoso.com"
 }

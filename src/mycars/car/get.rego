@@ -1,8 +1,10 @@
 package mycars.car.get
 
-default allow = false
+default allowed = false
+default visibile = false
+default enabled = false
 
-allow {
+allowed {
     i = dir.identity(input.user)
     u = dir.user(i)
     u.enabled == true

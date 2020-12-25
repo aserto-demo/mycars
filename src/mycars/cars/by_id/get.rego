@@ -1,3 +1,6 @@
 package mycars.cars.by_id.get
 
-default allow = false
+default allowed = false
+default visibile = false
+default enabled = false
+
