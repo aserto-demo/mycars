@@ -1,4 +1,4 @@
-package mycars.cars.by_id.delete
+package mycars.cars.__id.put
 
 default allowed = false
 default visible = false
