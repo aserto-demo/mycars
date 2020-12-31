@@ -9,3 +9,7 @@ bundle.tar.gz
 bundle/
 
 save/
+
+# demo directories
+cfg/
+eds/
