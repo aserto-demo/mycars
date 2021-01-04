@@ -5,6 +5,6 @@ default visible = false
 default enabled = false
 
 allowed {
-    # i = dir.identity(input.user)
-    input.user == "euang@contoso.com"
+    u = input.user
+    u.attr.department == "Sales Engagement Management"
 }
