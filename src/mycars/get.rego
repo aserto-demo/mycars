@@ -8,3 +8,11 @@ allowed {
     u = input.user
     u.attr.department == "Sales Engagement Management"
 }
+
+visible {
+	allowed
+}
+
+enabled {
+	allowed
+}
