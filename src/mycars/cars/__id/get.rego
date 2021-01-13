@@ -1,4 +1,4 @@
-package mycars.cars.__id.get
+package mycars.GET.cars.__id
 
 default allowed = false
 default visible = false

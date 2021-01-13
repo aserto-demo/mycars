@@ -1,4 +1,4 @@
-package mycars.cars.__id.put
+package mycars.PUT.cars.__id
 
 default allowed = false
 default visible = false
