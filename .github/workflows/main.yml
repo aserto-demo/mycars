@@ -11,18 +11,21 @@ jobs:
     
     - uses: actions/checkout@v2
 
-    - name: build-bundle 
-      id: opa-build
-      uses: aserto-dev/opa-build-action@v2
+    - name: Build policy
+      id: aserto-build
+      uses: aserto-dev/aserto-build-action@v1-beta
       with:
         source: "src"
         target: "build/bundle.tar.gz"
         options: "--revision $GITHUB_SHA"
 
-    - name: upload
-      uses: ncipollo/release-action@v1
+    - name: Release
+      id: release
+      uses: xresloader/upload-to-github-release@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        artifacts: "build/bundle.tar.gz"
-        token: ${{ secrets.GITHUB_TOKEN }}
-        name: "Aserto OPA bundle release"
-        omitBody: true
+        file: "build/bundle.tar.gz"
+        tags: true
+        draft: false
+        verbose: true
